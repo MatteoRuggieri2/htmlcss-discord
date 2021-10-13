@@ -7,7 +7,7 @@
 
 /*COMMON*/
 body{
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Whitney', sans-serif;
 }
 
 .container{
@@ -17,6 +17,21 @@ body{
 
 a{
     text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+.title{
+    font-size: 55px;
+    line-height: 60px;
+    color: black;
+}
+
+.paragraph{
+    font-size: 22px;
+    line-height: 30px;
 }
 
 /*Columns*/
@@ -114,13 +129,11 @@ nav a{
 }
 
 .jumbo h1{
-    font-size: 55px;
     margin-bottom: 40px;
+    color: white;
 }
 
 .jumbo p{
-    font-size: 22px;
-    line-height: 30px;
     margin-bottom: 30px;
 }
 
@@ -150,9 +163,6 @@ main section{
 }
 
 .col-text h2{
-    font-size: 55px;
-    color: black;
-    line-height: 60px;
     margin: 40px 0;
 }
 
@@ -160,4 +170,8 @@ main section{
     font-size: 22px;
     line-height: 30px;
     color: black;
+}
+
+main section:last-child{
+    text-align: center;
 }
