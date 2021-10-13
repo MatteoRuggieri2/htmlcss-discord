@@ -15,8 +15,17 @@ body{
     margin: auto;
 }
 
+ul{
+    list-style-type: none;
+}
+
 a{
     text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+    text-decoration: underline;
 }
 
 img{
@@ -48,17 +57,20 @@ img{
 
 /*Button*/
 .btn{
+    display: inline-block;
     border-radius: 20px;
     font-size: 16px;
+    line-height: normal;
 }
 
 .btn-small{
     padding: 5px 14px;
+    font-size: 14px;
 }
 
 .btn-large{
     padding: 10px 25px;
-    margin: 0 10px;
+    margin: 30px 10px 0;
 }
 
 .bkg-white{
@@ -66,9 +78,26 @@ img{
     color: black;
 }
 
+.btn.bkg-white:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 .bkg-dark{
     background-color: black;
     color: white;
+}
+
+.btn.bkg-dark:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.bkg-purple{
+    background-color: #8ea1e1;
+    color: white;
+}
+
+.btn.bkg-purple:hover{
+    background-color: #8ea1e1cc;
 }
 
 /*HEADER*/
@@ -88,6 +117,8 @@ nav{
 
 .logo{
     vertical-align: middle;
+    width: 100px;
+    cursor: pointer;
 
 }
 
@@ -101,7 +132,6 @@ nav{
 }
 
 nav ul{
-    list-style-type: none;
     text-align: center;
 }
 
@@ -130,11 +160,7 @@ nav a{
 }
 
 .jumbo h1{
-    color: white;
-}
-
-.jumbo p{
-    margin-bottom: 30px;
+    color: inherit;
 }
 
 /*Jumbo Button*/
@@ -166,12 +192,100 @@ main section{
     margin: 40px 0;
 }
 
-.col-text p{
-    font-size: 22px;
-    line-height: 30px;
-    color: black;
-}
-
 main section:last-child{
     text-align: center;
+}
+
+.decoration{
+    display: inline-block;
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 30px 45px 0;
+}
+
+span.decoration{
+    font-size: 30px;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #23272a;
+}
+
+.col-languages{
+    width: 30%;
+    margin-top: 80px;
+}
+
+.col-product,
+.col-company,
+.col-resources,
+.col-standards{
+    width: 15%;
+    margin-top: 80px;
+}
+
+footer ul span{
+    color: #8ea1e1;
+}
+
+footer li{
+    margin: 7px 0;
+    font-weight: 100;
+}
+
+.language{
+    font-size: 35px;
+    font-weight: bold;
+    color: #8ea1e1;
+}
+
+.flag{
+    width: 20px;
+}
+
+.language-container{
+    margin: 20px 0;
+    color: white;
+    line-height: 20px;
+}
+
+.angle-down-icon{
+    margin-left: 5px;
+}
+
+.social-icons{
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+/*Icons hover*/
+.twitter:hover{
+    color: #1d9bf0;
+}
+
+.instagram:hover{
+    color: #f66009;
+}
+
+.facebook:hover{
+    color: #1877f2;
+}
+
+.youtube:hover{
+    color: #ff0000;
+}
+
+/* Sign in container */
+.sign-in{
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 1px solid #8ea1e1;
+}
+
+div.sign-in a{
+    float: right;
 }
