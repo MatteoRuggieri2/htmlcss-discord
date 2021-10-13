@@ -25,6 +25,7 @@ img{
 
 .title{
     font-size: 55px;
+    margin-bottom: 40px;
     line-height: 60px;
     color: black;
 }
@@ -129,7 +130,6 @@ nav a{
 }
 
 .jumbo h1{
-    margin-bottom: 40px;
     color: white;
 }
 
