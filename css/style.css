@@ -175,6 +175,18 @@ main section{
     padding: 150px 0;
 }
 
+.wave{
+    color: #f6f6f6;
+}
+
+.wave svg{
+    display: block;
+}
+
+.wave.down{
+    transform: rotate(180deg);
+}
+
 .grey-section{
     background-color: #f6f6f6;
 }
@@ -220,10 +232,7 @@ footer{
     margin-top: 80px;
 }
 
-.col-product,
-.col-company,
-.col-resources,
-.col-standards{
+.footer-link-columns{
     width: 15%;
     margin-top: 80px;
 }
@@ -251,6 +260,15 @@ footer li{
     margin: 20px 0;
     color: white;
     line-height: 20px;
+}
+
+.language-container > *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.language-container a:hover{
+    text-decoration: underline;
 }
 
 .angle-down-icon{
